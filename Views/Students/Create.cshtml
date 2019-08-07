@@ -1,0 +1,107 @@
+﻿@model SportApp.Models.Student
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SpolId" class="control-label"></label>
+                <select asp-for="SpolId" class ="form-control" asp-items="ViewBag.SpolId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ime" class="control-label"></label>
+                <input asp-for="Ime" class="form-control" />
+                <span asp-validation-for="Ime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prezime" class="control-label"></label>
+                <input asp-for="Prezime" class="form-control" />
+                <span asp-validation-for="Prezime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SifraStudent" class="control-label"></label>
+                <input asp-for="SifraStudent" class="form-control" />
+                <span asp-validation-for="SifraStudent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentDatum" class="control-label"></label>
+                <input asp-for="StudentDatum" class="form-control" />
+                <span asp-validation-for="StudentDatum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentMjesto" class="control-label"></label>
+                <input asp-for="StudentMjesto" class="form-control" />
+                <span asp-validation-for="StudentMjesto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GodinaMajka" class="control-label"></label>
+                <input asp-for="GodinaMajka" class="form-control" />
+                <span asp-validation-for="GodinaMajka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GodinaOtac" class="control-label"></label>
+                <input asp-for="GodinaOtac" class="form-control" />
+                <span asp-validation-for="GodinaOtac" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SportMajka" class="control-label"></label>
+                <input asp-for="SportMajka" class="form-control" />
+                <span asp-validation-for="SportMajka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SportOtac" class="control-label"></label>
+                <input asp-for="SportOtac" class="form-control" />
+                <span asp-validation-for="SportOtac" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KojiSportMajka" class="control-label"></label>
+                <input asp-for="KojiSportMajka" class="form-control" />
+                <span asp-validation-for="KojiSportMajka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KojiSportOtac" class="control-label"></label>
+                <input asp-for="KojiSportOtac" class="form-control" />
+                <span asp-validation-for="KojiSportOtac" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SportStudent" class="control-label"></label>
+                <input asp-for="SportStudent" class="form-control" />
+                <span asp-validation-for="SportStudent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KojiSportStudent" class="control-label"></label>
+                <input asp-for="KojiSportStudent" class="form-control" />
+                <span asp-validation-for="KojiSportStudent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Trajanje" class="control-label"></label>
+                <input asp-for="Trajanje" class="form-control" />
+                <span asp-validation-for="Trajanje" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Istovremeno" class="control-label"></label>
+                <input asp-for="Istovremeno" class="form-control" />
+                <span asp-validation-for="Istovremeno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,69 @@
+﻿@model SportApp.Models.Norma
+
+@{
+    ViewData["Title"] = "Izmjeni";
+}
+
+<h2>Izmjeni</h2>
+
+<h4>Norma</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NormaId" />
+            <div class="form-group">
+                <label asp-for="SpolId" class="control-label"></label>
+                <select asp-for="SpolId" class="form-control" asp-items="ViewBag.SpolId"></select>
+                <span asp-validation-for="SpolId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RazredId" class="control-label"></label>
+                <select asp-for="RazredId" class="form-control" asp-items="ViewBag.RazredId"></select>
+                <span asp-validation-for="RazredId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VrstaTestaId" class="control-label"></label>
+                <select asp-for="VrstaTestaId" class="form-control" asp-items="ViewBag.VrstaTestaId"></select>
+                <span asp-validation-for="VrstaTestaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ocjena1" class="control-label"></label>
+                <input asp-for="Ocjena1" class="form-control" />
+                <span asp-validation-for="Ocjena1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ocjena2" class="control-label"></label>
+                <input asp-for="Ocjena2" class="form-control" />
+                <span asp-validation-for="Ocjena2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ocjena3" class="control-label"></label>
+                <input asp-for="Ocjena3" class="form-control" />
+                <span asp-validation-for="Ocjena3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ocjena4" class="control-label"></label>
+                <input asp-for="Ocjena4" class="form-control" />
+                <span asp-validation-for="Ocjena4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ocjena5" class="control-label"></label>
+                <input asp-for="Ocjena5" class="form-control" />
+                <span asp-validation-for="Ocjena5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Spremi" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Povratak</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

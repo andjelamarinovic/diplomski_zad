@@ -1,0 +1,77 @@
+﻿@model SportApp.Models.Norma
+
+@{
+    ViewData["Title"] = "Brisanje";
+}
+
+<h2>Brisanje</h2>
+
+<h3>Jeste li sigurni da želite obrisati sljedeću normu?</h3>
+<div>
+    <h4>Norma</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Spol)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spol.NazivSpola)
+        </dd>
+        <br>
+        <dt>
+            @Html.DisplayNameFor(model => model.Razred)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Razred.BrojRazred)
+        </dd>
+        <br>
+        <dt>
+            @Html.DisplayNameFor(model => model.VrstaTesta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VrstaTesta.NazivTesta)
+        </dd>
+        <br>
+        <dt>
+            Ocjena1
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena1)
+        </dd>
+        <br>
+        <dt>
+            Ocjena2
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena2)
+        </dd>
+        <br>
+        <dt>
+            Ocjena3
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena3)
+        </dd>
+        <br>
+        <dt>
+            Ocjena4
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena4)
+        </dd>
+        <br>
+        <dt>
+            Ocjena5
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena5)
+        </dd>
+
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="NormaId" />
+        <input type="submit" value="Obriši" class="btn btn-default" /> |
+        <a asp-action="Index">Povratak</a>
+    </form>
+</div>

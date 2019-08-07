@@ -1,0 +1,74 @@
+﻿@model SportApp.Models.Norma
+
+@{
+    ViewData["Title"] = "Detalji";
+}
+
+<h2>Detalji</h2>
+
+<div>
+    <h4>Norma</h4>
+    <hr />
+    <dl class="dl-horizontal" style="border-bottom: 1px solid lightgray">
+        <dt>
+            @Html.DisplayNameFor(model => model.Spol)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spol.NazivSpola)
+        </dd>
+        <br>
+        <dt>
+            @Html.DisplayNameFor(model => model.Razred)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Razred.BrojRazred)
+        </dd>
+        <br>
+        <dt>
+            @Html.DisplayNameFor(model => model.VrstaTesta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VrstaTesta.NazivTesta)
+        </dd>
+        <br>
+        <dt>
+            Ocjena1
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena1)
+        </dd>
+        <br>
+        <dt>
+            Ocjena2
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena2)
+        </dd>
+        <br>
+        <dt>
+            Ocjena3
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena3)
+        </dd>
+        <br>
+        <dt>
+            Ocjena4
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena4)
+        </dd>
+        <br>
+        <dt>
+            Ocjena5
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena5)
+        </dd>
+        <br>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.NormaId">Izmjena</a> |
+    <a asp-action="Index">Povratak</a>
+</div>

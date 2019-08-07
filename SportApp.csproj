@@ -1,0 +1,90 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190731191340_i1.cs" />
+    <Compile Remove="Migrations\20190731191340_i1.Designer.cs" />
+    <Compile Remove="Migrations\20190731191714_i1.cs" />
+    <Compile Remove="Migrations\20190731191714_i1.Designer.cs" />
+    <Compile Remove="Migrations\20190731191916_i1.cs" />
+    <Compile Remove="Migrations\20190731191916_i1.Designer.cs" />
+    <Compile Remove="Migrations\20190731192347_i1.cs" />
+    <Compile Remove="Migrations\20190731192347_i1.Designer.cs" />
+    <Compile Remove="Migrations\20190731193754_i2.cs" />
+    <Compile Remove="Migrations\20190731193754_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190731194730_i2.cs" />
+    <Compile Remove="Migrations\20190731194730_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190731195206_i2.cs" />
+    <Compile Remove="Migrations\20190731195206_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190731195927_i2.cs" />
+    <Compile Remove="Migrations\20190731195927_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190731201501_i2.cs" />
+    <Compile Remove="Migrations\20190731201501_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190731201849_i2.cs" />
+    <Compile Remove="Migrations\20190731201849_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190731202442_i2.cs" />
+    <Compile Remove="Migrations\20190731202442_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802171501_i2.cs" />
+    <Compile Remove="Migrations\20190802171501_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802172155_i2.cs" />
+    <Compile Remove="Migrations\20190802172155_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802172625_i2.cs" />
+    <Compile Remove="Migrations\20190802172625_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802172650_i2.cs" />
+    <Compile Remove="Migrations\20190802172650_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802172939_i2.cs" />
+    <Compile Remove="Migrations\20190802172939_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802173726_i2.cs" />
+    <Compile Remove="Migrations\20190802173726_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802181051_i2.cs" />
+    <Compile Remove="Migrations\20190802181051_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802181406_i2.cs" />
+    <Compile Remove="Migrations\20190802181406_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802181612_i2.cs" />
+    <Compile Remove="Migrations\20190802181612_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802181835_i2.cs" />
+    <Compile Remove="Migrations\20190802181835_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802182050_i2.cs" />
+    <Compile Remove="Migrations\20190802182050_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802182426_i2.cs" />
+    <Compile Remove="Migrations\20190802182426_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802182559_i2.cs" />
+    <Compile Remove="Migrations\20190802182559_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802182819_i2.cs" />
+    <Compile Remove="Migrations\20190802182819_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802183055_i2.cs" />
+    <Compile Remove="Migrations\20190802183055_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802183527_i2.cs" />
+    <Compile Remove="Migrations\20190802183527_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802183749_i2.cs" />
+    <Compile Remove="Migrations\20190802183749_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802184002_i2.cs" />
+    <Compile Remove="Migrations\20190802184002_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802184543_i2.cs" />
+    <Compile Remove="Migrations\20190802184543_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802184841_i2.cs" />
+    <Compile Remove="Migrations\20190802184841_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802193046_i2.cs" />
+    <Compile Remove="Migrations\20190802193046_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802193351_i2.cs" />
+    <Compile Remove="Migrations\20190802193351_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802193454_i2.cs" />
+    <Compile Remove="Migrations\20190802193454_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802194401_i2.cs" />
+    <Compile Remove="Migrations\20190802194401_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802194753_i2.cs" />
+    <Compile Remove="Migrations\20190802194753_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190802201906_i2.cs" />
+    <Compile Remove="Migrations\20190802201906_i2.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
