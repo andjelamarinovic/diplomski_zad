@@ -40,3 +40,13 @@ C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Vi
 C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Students\Details.g.cshtml.cs
 C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Students\Edit.g.cshtml.cs
 C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Students\Index.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Testiranjes\Create.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Testiranjes\Delete.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Testiranjes\Details.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Testiranjes\Edit.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Testiranjes\Index.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Tests\Create.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Tests\Delete.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Tests\Details.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Tests\Edit.g.cshtml.cs
+C:\Users\Anđela\source\repos\SportApp\SportApp\obj\Debug\netcoreapp2.1\Razor\Views\Tests\Index.g.cshtml.cs

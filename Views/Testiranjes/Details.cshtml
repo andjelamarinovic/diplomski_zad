@@ -1,0 +1,37 @@
+﻿@model SportApp.Models.Testiranje
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div>
+    <h2>Detalji testiranja</h2>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumTest)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DatumTest)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Razred)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Razred.BrojRazred)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Student)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Student.Ime)
+            @Html.DisplayFor(model => model.Student.Prezime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.TestiranjeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

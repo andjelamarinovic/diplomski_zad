@@ -79,6 +79,16 @@
     <Compile Remove="Migrations\20190802194753_i2.Designer.cs" />
     <Compile Remove="Migrations\20190802201906_i2.cs" />
     <Compile Remove="Migrations\20190802201906_i2.Designer.cs" />
+    <Compile Remove="Migrations\20190825142453_Addtestiranje.cs" />
+    <Compile Remove="Migrations\20190825142453_Addtestiranje.Designer.cs" />
+    <Compile Remove="Migrations\20190827162834_Addtestiranje47.cs" />
+    <Compile Remove="Migrations\20190827162834_Addtestiranje47.Designer.cs" />
+    <Compile Remove="Migrations\20190827165210_Addtestiranje48.cs" />
+    <Compile Remove="Migrations\20190827165210_Addtestiranje48.Designer.cs" />
+    <Compile Remove="Migrations\20190827173524_Addtestiranje49.cs" />
+    <Compile Remove="Migrations\20190827173524_Addtestiranje49.Designer.cs" />
+    <Compile Remove="Migrations\20190827173638_Addtestiranje48.cs" />
+    <Compile Remove="Migrations\20190827173638_Addtestiranje48.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

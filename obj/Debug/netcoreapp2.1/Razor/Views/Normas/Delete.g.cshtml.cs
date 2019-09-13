@@ -178,12 +178,12 @@ using SportApp.Models;
             WriteLiteral("\r\n        </dd>\r\n\r\n    </dl>\r\n    \r\n    ");
             EndContext();
             BeginContext(1559, 208, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f8bfc1e48b541b19aa764843f872c78", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea2063ac49e24d208135479c53aea1fa", async() => {
                 BeginContext(1585, 10, true);
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(1595, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c81c0fda02df4eafbefd8332389f9ad1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8000e7b621074b26bbb3893fb386d6fc", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -208,7 +208,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        <input type=\"submit\" value=\"Obriši\" class=\"btn btn-default\" /> |\r\n        ");
                 EndContext();
                 BeginContext(1720, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e0cbdd09a5440f486c33d127fc4cb7c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91a981186e914ce781ff9dc0406e2729", async() => {
                     BeginContext(1742, 8, true);
                     WriteLiteral("Povratak");
                     EndContext();

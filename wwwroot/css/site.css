@@ -17,7 +17,11 @@ body {
     font-size: 20px;
     line-height: 1.4;
 }
+footer {
 
+bottom:0;
+background-color:white;
+}
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;

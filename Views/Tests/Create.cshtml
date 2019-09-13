@@ -1,0 +1,40 @@
+﻿@model SportApp.Models.ViewModel.TestiranjeViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+<h2>Novo testiranje</h2>
+<hr />
+@using (Html.BeginForm("Create", "Tests"))
+{
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <p style="font-weight:bold;">
+                        Datum testiranja:
+                        @Model.DatumTesta
+                    </p>
+                </div>
+                @foreach (var testRezultat in Model.TestsRezultati)
+                {
+                    <div class="form-group">
+                        <input asp-for="@testRezultat.VrstaTestaId" type="hidden" />
+                        <label asp-for="@testRezultat.Rezultat" class="control-label">@testRezultat.NazivTesta</label>
+                        <input asp-for="@testRezultat.Rezultat" class="form-control" />
+                        <span asp-validation-for="@testRezultat" class="text-danger"></span>
+                    </div>
+                }
+                <div class="form-group">
+                    <input type="submit" value="Kreiraj" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

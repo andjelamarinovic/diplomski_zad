@@ -174,7 +174,7 @@ using SportApp.Models;
             WriteLiteral("\r\n        </dd>\r\n        <br>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1559, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "144584eed7fd4d71b36295d827d25db3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d460ad9cf3549ea9dcee23ced803be0", async() => {
                 BeginContext(1610, 7, true);
                 WriteLiteral("Izmjena");
                 EndContext();
@@ -209,7 +209,7 @@ using SportApp.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1629, 34, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d0f756e50364a04a499711eda2c0373", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2125b016d472458fb2d4d3bb5ae10728", async() => {
                 BeginContext(1651, 8, true);
                 WriteLiteral("Povratak");
                 EndContext();

@@ -1,0 +1,48 @@
+﻿@model SportApp.Models.Test
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Test</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TestRezultat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TestRezultat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ocjena)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ocjena)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Testiranje)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Testiranje.TestiranjeId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VrstaTesta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VrstaTesta.VrstaTestaId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Norma)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Norma.NormaId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.TestId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

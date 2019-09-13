@@ -66,7 +66,7 @@ using SportApp.Models;
             WriteLiteral("\r\n<h2>Lista svih normi</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(126, 40, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a556a2cde98e4419ad38f401d96de9c0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "521698ab304044a6a0c5356719442846", async() => {
                 BeginContext(149, 13, true);
                 WriteLiteral("Kreiraj normu");
                 EndContext();
@@ -228,7 +228,7 @@ using SportApp.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1796, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "082be3f1ae1c413f8197bcf1503bada0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73843d83d06e458eb5b9ac4435a1fde4", async() => {
                 BeginContext(1846, 7, true);
                 WriteLiteral("Izmjena");
                 EndContext();
@@ -263,7 +263,7 @@ using SportApp.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1877, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9037dc5e30b7441395bc25c5c60522bb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa6a8bcafeee4cbbaea2699978c20a2f", async() => {
                 BeginContext(1930, 7, true);
                 WriteLiteral("Detalji");
                 EndContext();
@@ -298,7 +298,7 @@ using SportApp.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1961, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a82315c0b814cff8643789a206b85de", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81eee8e481cf47f8bee6ae5cd02740f0", async() => {
                 BeginContext(2013, 6, true);
                 WriteLiteral("Obriši");
                 EndContext();

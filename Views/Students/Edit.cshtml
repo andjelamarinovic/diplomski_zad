@@ -1,12 +1,12 @@
 ﻿@model SportApp.Models.Student
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Izmjena";
 }
 
-<h2>Edit</h2>
+<h2>Izmjena</h2>
 
-<h4>Student</h4>
+<h4>Ispitanik</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -94,14 +94,14 @@
                 <span asp-validation-for="Istovremeno" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Spremi" class="btn btn-default" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Povratak na listu ispitanika</a>
 </div>
 
 @section Scripts {

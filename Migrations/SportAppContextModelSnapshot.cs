@@ -137,7 +137,7 @@ namespace SportApp.Migrations
 
                     b.Property<string>("Ime");
 
-                    b.Property<bool?>("Istovremeno");
+                    b.Property<string>("Istovremeno");
 
                     b.Property<string>("KojiSportMajka");
 
@@ -155,7 +155,7 @@ namespace SportApp.Migrations
 
                     b.Property<string>("SportOtac");
 
-                    b.Property<bool?>("SportStudent");
+                    b.Property<string>("SportStudent");
 
                     b.Property<DateTime?>("StudentDatum")
                         .HasColumnType("date");
@@ -284,7 +284,7 @@ namespace SportApp.Migrations
                     b.HasOne("SportApp.Models.Norma", "Norma")
                         .WithMany("Test")
                         .HasForeignKey("NormaId")
-                        .HasConstraintName("FK_Test_Norma");
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("SportApp.Models.Testiranje", "Testiranje")
                         .WithMany("Test")

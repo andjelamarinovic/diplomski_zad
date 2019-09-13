@@ -2,7 +2,7 @@
 
 namespace SportApp.Migrations
 {
-    public partial class iStudent : Migration
+    public partial class testViewModel : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

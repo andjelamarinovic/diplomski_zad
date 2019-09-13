@@ -1,129 +1,149 @@
 ﻿@model SportApp.Models.Student
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalji";
 }
 
-<h2>Details</h2>
+<h2>Detalji</h2>
 
 <div>
-    <h4>Student</h4>
+
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Spol)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Spol.NazivSpola)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.Ime)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Ime)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.Prezime)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Prezime)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.SifraStudent)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.SifraStudent)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.StudentDatum)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.StudentDatum)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.StudentMjesto)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.StudentMjesto)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.GodinaMajka)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.GodinaMajka)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.GodinaOtac)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.GodinaOtac)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.SportMajka)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.SportMajka)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.SportOtac)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.SportOtac)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.KojiSportMajka)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.KojiSportMajka)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.KojiSportOtac)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.KojiSportOtac)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.SportStudent)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.SportStudent)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.KojiSportStudent)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.KojiSportStudent)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.Trajanje)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Trajanje)
-        </dd>
-        <br>
-        <dt>
-            @Html.DisplayNameFor(model => model.Istovremeno)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Istovremeno)
-        </dd>
+    <dl class="">
+        <div class="row">
+            <div class="col-sm-12">
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Spol)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.Spol.NazivSpola)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Ime)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.Ime)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Prezime)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.Prezime)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.SifraStudent)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.SifraStudent)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.StudentDatum)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.StudentDatum)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.StudentMjesto)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.StudentMjesto)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.GodinaMajka)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.GodinaMajka)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.GodinaOtac)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.GodinaOtac)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.SportMajka)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.SportMajka)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.SportOtac)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.SportOtac)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.KojiSportMajka)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.KojiSportMajka)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.KojiSportOtac)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.KojiSportOtac)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.SportStudent)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.SportStudent)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.KojiSportStudent)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.KojiSportStudent)
+                </dd>
+                <br>
+                <br>
+
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Trajanje)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.Trajanje)
+                </dd>
+                <br>
+                <br>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Istovremeno)
+                </dt>
+                <dd class="col-sm-4">
+                    @Html.DisplayFor(model => model.Istovremeno)
+                </dd>
+            </div>
+            </div>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.StudentId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.StudentId">Izmjena</a> |
+    <a asp-action="Index">Povratak na listu ispitanika</a>
 </div>

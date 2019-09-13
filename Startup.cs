@@ -16,12 +16,11 @@ namespace SportApp
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; private set; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -33,9 +32,9 @@ namespace SportApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            var connection = @"Server=.\;Database=SportApp;Trusted_Connection=True;ConnectRetryCount=0";
+
+            var connection = Configuration.GetValue<string>("ConnectionStrings:Default");
             services.AddDbContext<SportAppContext>(options => options.UseSqlServer(connection));
         }
 

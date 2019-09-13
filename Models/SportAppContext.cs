@@ -1,18 +1,18 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Configuration;
 
 namespace SportApp.Models
 {
     public partial class SportAppContext : DbContext
     {
-        public SportAppContext()
-        {
-        }
+        private readonly string connectionString;
 
-        public SportAppContext(DbContextOptions<SportAppContext> options)
+        public SportAppContext(DbContextOptions<SportAppContext> options, IConfiguration configuration)
             : base(options)
         {
+            connectionString = configuration.GetValue<string>("ConnectionStrings:Default");
         }
 
         public virtual DbSet<Norma> Norma { get; set; }
@@ -107,12 +107,6 @@ namespace SportApp.Models
 
                 entity.Property(e => e.TestRezultat).HasColumnType("decimal(18, 0)");
 
-                entity.HasOne(d => d.Norma)
-                    .WithMany(p => p.Test)
-                    .HasForeignKey(d => d.NormaId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Test_Norma");
-
                 entity.HasOne(d => d.Testiranje)
                     .WithMany(p => p.Test)
                     .HasForeignKey(d => d.TestiranjeId);
@@ -120,6 +114,10 @@ namespace SportApp.Models
                 entity.HasOne(d => d.VrstaTesta)
                     .WithMany(p => p.Test)
                     .HasForeignKey(d => d.VrstaTestaId);
+
+                entity.HasOne(d => d.Norma)
+                    .WithMany(p => p.Test)
+                    .HasForeignKey(d => d.NormaId);
             });
 
             modelBuilder.Entity<Testiranje>(entity =>

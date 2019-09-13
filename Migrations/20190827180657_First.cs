@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SportApp.Migrations
 {
-    public partial class i2 : Migration
+    public partial class First : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -81,10 +81,10 @@ namespace SportApp.Migrations
                     SportOtac = table.Column<string>(nullable: true),
                     KojiSportMajka = table.Column<string>(nullable: true),
                     KojiSportOtac = table.Column<string>(nullable: true),
-                    SportStudent = table.Column<bool>(nullable: true),
+                    SportStudent = table.Column<string>(nullable: true),
                     KojiSportStudent = table.Column<string>(nullable: true),
                     Trajanje = table.Column<int>(nullable: true),
-                    Istovremeno = table.Column<bool>(nullable: true)
+                    Istovremeno = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -196,8 +196,8 @@ namespace SportApp.Migrations
                     TestId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     VrstaTestaId = table.Column<int>(nullable: false),
-                    NormaId = table.Column<int>(nullable: false),
                     TestiranjeId = table.Column<int>(nullable: false),
+                    NormaId = table.Column<int>(nullable: false),
                     TestRezultat = table.Column<decimal>(type: "decimal(18, 0)", nullable: true),
                     Ocjena = table.Column<decimal>(type: "decimal(18, 0)", nullable: true)
                 },
@@ -205,11 +205,11 @@ namespace SportApp.Migrations
                 {
                     table.PrimaryKey("PK_Test", x => x.TestId);
                     table.ForeignKey(
-                        name: "FK_Test_Norma",
+                        name: "FK_Test_Norma_NormaId",
                         column: x => x.NormaId,
                         principalTable: "Norma",
                         principalColumn: "NormaId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Test_Testiranje_TestiranjeId",
                         column: x => x.TestiranjeId,
